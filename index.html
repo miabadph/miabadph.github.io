@@ -1,7 +1,22 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages Mac.</p>
+<head>
+        <link href="style.css" rel="stylesheet">
+</head>
+<body onresize="onPageResize()">
+    <div id="mainContainer" class="bg">
+    <div id="content" class="thumbnail">
+        <img id="nasaImg" style="width:100%;">
+    </div>
+    <div id="dpContainer" class="dp">
+        <label for="start">Select Date:</label>
+        <input type="date" id="datePicker">
+        <button type="button" onclick="submitDate()">Submit Date</button>
+    </div>
+    <div id="imgModal" class="modal">
+            <span id="closeSpan" class="close">&times;</span>
+            <img class="modal-content" id="modalImgContent">
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
